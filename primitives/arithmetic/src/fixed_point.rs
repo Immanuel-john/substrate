@@ -35,7 +35,7 @@ use sp_std::{
 #[cfg(feature = "std")]
 use serde::{de, Deserialize, Deserializer, Serialize, Serializer};
 
-use primitive_types::U256;
+use substrate_primtives::U256;
 /// Integer types that can be used to interact with `FixedPointNumber` implementations.
 pub trait FixedPointOperand:
 	Copy
