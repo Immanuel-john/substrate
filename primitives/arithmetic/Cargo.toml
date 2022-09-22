@@ -19,7 +19,6 @@ codec = { package = "parity-scale-codec", version = "3.0.0", default-features = 
 	"max-encoded-len",
 ] }
 primitive-types = "0.11.1"
-substrate-primitives = "1.0.0"
 integer-sqrt = "0.1.2"
 num-traits = { version = "0.2.8", default-features = false }
 scale-info = { version = "2.1.1", default-features = false, features = ["derive"] }
@@ -27,6 +26,7 @@ serde = { version = "1.0.136", features = ["derive"], optional = true }
 static_assertions = "1.1.0"
 sp-debug-derive = { version = "4.0.0", default-features = false, path = "../debug-derive" }
 sp-std = { version = "4.0.0", default-features = false, path = "../std" }
+sp-core = { version = "6.0.0", features = ["full_crypto"], path = "../core" }
 
 [dev-dependencies]
 criterion = "0.3"
