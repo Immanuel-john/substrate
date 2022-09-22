@@ -50,7 +50,7 @@ pub trait FixedPointOperand:
 {
 }
 
-// impl FixedPointOperand for U256 {}
+impl FixedPointOperand for U256 {}
 impl FixedPointOperand for i128 {}
 impl FixedPointOperand for u128 {}
 impl FixedPointOperand for i64 {}
