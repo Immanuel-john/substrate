@@ -35,6 +35,7 @@ use sp_std::{
 #[cfg(feature = "std")]
 use serde::{de, Deserialize, Deserializer, Serialize, Serializer};
 
+use primitive_types::U256;
 /// Integer types that can be used to interact with `FixedPointNumber` implementations.
 pub trait FixedPointOperand:
 	Copy
@@ -49,6 +50,7 @@ pub trait FixedPointOperand:
 {
 }
 
+impl FixedPointOperand for U256 {}
 impl FixedPointOperand for i128 {}
 impl FixedPointOperand for u128 {}
 impl FixedPointOperand for i64 {}
